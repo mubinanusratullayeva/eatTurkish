@@ -1,0 +1,28 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v35-latin-regular.eot');
+    src: url('../fonts/open-sans-v35-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans-v35-latin-regular.woff2') format('woff2'),
+         url('../fonts/open-sans-v35-latin-regular.woff') format('woff'),
+         url('../fonts/open-sans-v35-latin-regular.ttf') format('truetype'),
+         url('../fonts/open-sans-v35-latin-regular.svg#OpenSans') format('svg');
+  }
+
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    src: url('../fonts/inter-v12-latin-regular.eot');
+    src: url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/inter-v12-latin-regular.woff') format('woff'),
+         url('../fonts/inter-v12-latin-regular.ttf') format('truetype'),
+         url('../fonts/inter-v12-latin-regular.svg#Inter') format('svg');
+  }
+
+
+  @font-face {
+    font-family: 'Cera Round Pro';
+    src: url(../fonts/FONTSPRINGDEMO-CeraRoundProBlackRegular.woff);
+  }
