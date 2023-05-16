@@ -28,6 +28,117 @@
 
 body {
   font-family: "Open Sans";
+  color: #ffffff;
+}
+
+header {
+  padding-bottom: 237px;
+  background-color: #BB2339;
+}
+header nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+header nav .navbar__menu {
+  min-width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+header nav .navbar__menu-burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  column-gap: 40px;
+}
+header nav .navbar__menu-burger--list {
+  list-style: none;
+}
+header nav .navbar__menu-burger--link {
+  padding: 39px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav .navbar__menu-burger--link:hover {
+  border-bottom: 2px solid rgb(187, 187, 0);
+}
+header nav .navbar__menu .borWBtn {
+  margin-left: 40px;
+  padding: 10px 40px;
+  min-width: 131px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .hero {
+  margin-top: 80px;
+  background-image: url(../images/hero-bg1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  background-position-y: center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  header .hero {
+    background-image: url("../images/hero-bg2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: default;
+  }
+}
+header .hero__desk-topTitle {
+  font-family: "Cera Round Pro";
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+header .hero__desk-mainTitle {
+  margin: 25px 0 20px 0;
+  max-width: 555px;
+  font-family: "Cera Round Pro";
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+header .hero__desk-text {
+  margin-bottom: 40px;
+  max-width: 453px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+header .hero__desk .borWBtn {
+  padding: 10px 40px;
+  min-width: 131px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
