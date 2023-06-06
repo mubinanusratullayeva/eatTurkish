@@ -210,4 +210,169 @@ header .hero__desk .borWBtn {
   text-decoration: none;
 }
 
+section {
+  padding-top: 120px;
+  background-color: #f8f8f8;
+}
+section .popular__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+section .popular__navbar-title {
+  font-family: "Cera Round Pro";
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #BB2339;
+}
+section .popular__navbar-flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 20px;
+}
+section .popular__navbar-flexBox--nextBtn {
+  padding: 9px 15px;
+  min-width: 40px;
+  min-height: 40px;
+  border: 1px solid #646464;
+  border-radius: 6px;
+  font-size: 26px;
+  font-weight: 500;
+  color: grey;
+  background-color: transparent;
+  box-shadow: 0 8px #999;
+}
+section .popular__navbar-flexBox--nextBtn:hover {
+  border: 1px solid #BB2339;
+  background-color: #9d4545;
+  color: #242424;
+}
+section .popular__navbar-flexBox--nextBtn:active {
+  background-color: #BB2339;
+  color: #ffffff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+section .popular .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+  margin: 40px 0 71px;
+}
+section .popular .cards__item {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+section .popular .cards__item-bg {
+  background-image: url(../images/klipartz.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 183px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  section .popular .cards__item-bg {
+    background-image: url("../images/klipartz1@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: default;
+  }
+}
+section .popular .cards__item-bgp {
+  background-image: url(../images/pizza1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 183px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  section .popular .cards__item-bgp {
+    background-image: url("../images/pizza2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: default;
+  }
+}
+section .popular .cards__item-bgb {
+  background-image: url(../images/burger1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 183px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  section .popular .cards__item-bgb {
+    background-image: url("../images/burger2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: default;
+  }
+}
+section .popular .cards__item-bgf {
+  background-image: url(../images/fri1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 183px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  section .popular .cards__item-bgf {
+    background-image: url("../images/fri2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: default;
+  }
+}
+section .popular .cards__item-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section .popular .cards__item-block--title {
+  max-width: 270px;
+  color: #242424;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+section .popular .cards__item-block--favo {
+  margin: 20px 0;
+  max-width: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: default;
+}
+section .popular .cards__item-block--favo .star {
+  cursor: pointer;
+  fill: #c1c1c1;
+}
+section .popular .cards__item-block--favo .star:hover {
+  fill: yellow;
+}
+section .popular .cards__item-block--favo .fillColor {
+  fill: #FFEA28;
+}
+section .popular .cards__item-block--price {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #BB2339;
+}
+section .popular__icon {
+  width: 93px;
+  margin-bottom: -62px;
+  margin-left: 1213px;
+}
+
 /*# sourceMappingURL=main.css.map */

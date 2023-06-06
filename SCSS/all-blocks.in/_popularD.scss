@@ -1,0 +1,126 @@
+@use'../mixins';
+@use'../variables';
+
+section{
+    padding-top: 120px;
+    background-color: #f8f8f8;
+    .popular{
+        &__navbar{
+            @include mixins.flexbox(center, space-between);
+            &-title{
+                font-family: 'Cera Round Pro';
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: 0.03em;
+                text-transform: capitalize;
+                font-feature-settings: 'tnum' on, 'lnum' on;
+                color: variables.$diff-color;
+            }
+            &-flexBox{
+                @include mixins.flexbox(center);
+                column-gap: 20px;
+                &--nextBtn{
+                    padding: 9px 15px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    border: 1px solid #646464;
+                    border-radius: 6px;
+                    font-size: 26px;
+                    font-weight: 500;
+                    color: grey;
+                    background-color: transparent;
+                    box-shadow: 0 8px #999;
+                }
+                &--nextBtn:hover{
+                    border: 1px solid variables.$diff-color;
+                    background-color: #9d4545;
+                    color: variables.$secondary-color;
+                }
+                &--nextBtn:active{
+                    background-color: variables.$diff-color;
+                    color: variables.$main-color;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+            }
+        }
+        .cards{
+            @include mixins.flexbox(center, space-between);
+            margin: 40px 0 71px;
+            &__item{
+                background-color: variables.$main-color;
+                padding: 40px 20px;
+                &-bg{
+                    background-image: url(../images/klipartz.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include mixins.bgformat-2x('../images/klipartz1@2x.png', contain);
+                    height: 183px;
+                }
+                &-bgp{
+                    background-image: url(../images/pizza1.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include mixins.bgformat-2x('../images/pizza2x.png', contain);
+                    height: 183px;
+                }
+                &-bgb{
+                    background-image: url(../images/burger1x.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include mixins.bgformat-2x('../images/burger2x.png', contain);
+                    height: 183px;
+                }
+                &-bgf{
+                    background-image: url(../images/fri1x.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    @include mixins.bgformat-2x('../images/fri2x.png', contain);
+                    height: 183px;
+                }
+                &-block{
+                @include mixins.flexbox(center, center, column);
+                    &--title{
+                        max-width: 270px;
+                        color: variables.$secondary-color;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                    }
+                    &--favo{
+                        margin: 20px 0;
+                        max-width: 108px;
+                        @include mixins.flexbox(center, space-between);
+                        .star{
+                            cursor: pointer;
+                            fill: #c1c1c1;
+                        }
+                        .star:hover{
+                            fill: yellow;
+                        }
+                        .fillColor{
+                            fill: variables.$little-star;
+                        }
+                    }
+                    &--price{
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: variables.$diff-color;
+                    }
+                }
+            }
+        }
+        &__icon{
+            width: 93px;
+            margin-bottom: -62px;
+            margin-left: 1213px;
+        }
+    }
+}
