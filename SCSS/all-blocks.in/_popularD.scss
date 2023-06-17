@@ -20,29 +20,6 @@
             &-flexBox{
                 @include mixins.flexbox(center);
                 column-gap: 20px;
-                &--nextBtn{
-                    padding: 9px 15px;
-                    min-width: 40px;
-                    min-height: 40px;
-                    border: 1px solid #646464;
-                    border-radius: 6px;
-                    font-size: 26px;
-                    font-weight: 500;
-                    color: grey;
-                    background-color: transparent;
-                    box-shadow: 0 8px #999;
-                }
-                &--nextBtn:hover{
-                    border: 1px solid variables.$diff-color;
-                    background-color: #9d4545;
-                    color: variables.$secondary-color;
-                }
-                &--nextBtn:active{
-                    background-color: variables.$diff-color;
-                    color: variables.$main-color;
-                    box-shadow: 0 5px #666;
-                    transform: translateY(4px);
-                }
             }
         }
         .cards{

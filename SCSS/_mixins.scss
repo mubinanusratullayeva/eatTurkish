@@ -36,16 +36,19 @@
          }
 }
 
-@mixin borWBtn(){
+@mixin borWBtn($self-border, $self-color){
     padding: 10px 20px;
     min-width: 82px;
-    border: 1px solid #FFFFFF;
-    border-radius: 10px;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    border: 1px solid $self-border;
+    border-radius: 100px;
     font-weight: 600;
     font-size: 16px;
     line-height: 175%;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    color: variables.$secondary-color;
+    color: $self-color;
     text-decoration: none;
+    cursor: pointer;
 }
