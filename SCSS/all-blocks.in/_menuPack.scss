@@ -20,20 +20,6 @@
             margin: 60px 0 50px;
             @include mixins.flexbox(center);
             column-gap: 10px;
-            &-item{
-                @include mixins.borWBtn();
-                background-color: transparent;
-                border: 1px solid #BB2339;
-                transition: 0.2s ease-in-out;
-                cursor: pointer;
-            }
-            &-item:hover{
-                background-color: variables.$diff-color;
-                color: variables.$main-color;
-            }
-            &-item:active{
-                background-color: tomato;
-            }
         }
         &__dishCards{
             @include mixins.flexbox(center, space-between);
