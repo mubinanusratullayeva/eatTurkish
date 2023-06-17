@@ -22,7 +22,7 @@
     }
 }
 
-@mixin bgformat-2x ($bg2x:'default', $bg-size:default, $bg-h:default){
+@mixin bgformat-2x ($bg2x:'default', $bg-h:default){
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
      only screen and (min--moz-device-pixel-ratio: 2),
       only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -31,14 +31,14 @@
          only screen and (min-resolution: 2dppx){
             background-image: url($bg2x);
             background-repeat: no-repeat;
-            background-size: $bg-size;
+            background-size: contain;
             min-height: $bg-h;
          }
 }
 
 @mixin borWBtn(){
-    padding: 10px 40px;
-    min-width: 131px;
+    padding: 10px 20px;
+    min-width: 82px;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
     font-weight: 600;
@@ -46,6 +46,6 @@
     line-height: 175%;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    color: variables.$main-color;
+    color: variables.$secondary-color;
     text-decoration: none;
 }

@@ -1,7 +1,7 @@
 @use'../mixins';
 @use'../variables';
 
-section{
+.bgFf{
     padding-top: 120px;
     background-color: #f8f8f8;
     .popular{
@@ -119,7 +119,7 @@ section{
         }
         &__icon{
             width: 93px;
-            margin-bottom: -62px;
+            margin-bottom: -48px;
             margin-left: 1213px;
         }
     }
