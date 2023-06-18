@@ -258,7 +258,7 @@ header nav .navbar__menu-burger--link:hover {
 header nav .navbar__menu .borWBtn {
   margin-left: 40px;
   padding: 10px 20px;
-  min-width: 82px;
+  min-width: 82px !important;
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 1px solid #ffffff;
@@ -317,7 +317,7 @@ header .hero__desk-text {
 }
 header .hero__desk .borWBtn {
   padding: 10px 20px;
-  min-width: 82px;
+  min-width: 82px !important;
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 1px solid #ffffff;
@@ -499,7 +499,7 @@ header .hero__desk .borWBtn {
 }
 .bgFe .menuPack__btns-item {
   padding: 10px 20px;
-  min-width: 82px;
+  min-width: 82px !important;
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 1px solid #BB2339;
@@ -770,6 +770,16 @@ header .hero__desk .borWBtn {
   flex-direction: column;
   padding: 120px 0 8px;
 }
+.updates .news .accordion-body {
+  display: flex;
+  align-items: center !important;
+  justify-content: default;
+  flex-direction: default;
+  flex-wrap: wrap !important;
+  column-gap: 35px !important;
+  row-gap: 35px !important;
+  margin-bottom: 50px;
+}
 .updates .news__topTitle {
   margin-bottom: 8px;
   font-family: "Cera Round Pro";
@@ -839,7 +849,7 @@ header .hero__desk .borWBtn {
 }
 .updates .news__btn {
   padding: 10px 20px;
-  min-width: 82px;
+  min-width: 82px !important;
   background-color: transparent;
   transition: 0.2s ease-in-out;
   border: 1px solid #BB2339;
@@ -869,6 +879,77 @@ header .hero__desk .borWBtn {
 }
 .bgVideo__ifr-icon {
   position: absolute;
+}
+
+.instagr {
+  padding: 130px 0;
+  background-color: #f4f4f4;
+}
+.instagr__fotoBox {
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 64px;
+}
+.instagr__fotoBox-desc {
+  text-align: left;
+}
+.instagr__fotoBox-desc--topTitle {
+  margin-bottom: 8px;
+  font-family: "Cera Round Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+}
+.instagr__fotoBox-desc--title {
+  margin-top: 8px;
+  font-family: "Cera Round Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+}
+.instagr__fotoBox-desc--text {
+  margin: 24px 0;
+  max-width: 491px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.instagr__fotoBox-desc--btn {
+  padding: 10px 20px;
+  min-width: 82px !important;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #BB2339;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #242424;
+  text-decoration: none;
+  cursor: pointer;
+}
+.instagr__fotoBox-desc--btn:hover {
+  background-color: #BB2339;
+  color: #ffffff;
+}
+.instagr__fotoBox-desc--btn:active {
+  background-color: tomato;
 }
 
 /*# sourceMappingURL=main.css.map */

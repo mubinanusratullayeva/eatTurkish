@@ -5,6 +5,13 @@
     .news{
         @include mixins.flexbox(center, center, column);
         padding: 120px 0 8px;
+        .accordion-body{
+            @include mixins.flexbox(center!important);
+            flex-wrap: wrap!important;
+            column-gap: 35px!important;
+            row-gap: 35px!important;
+            margin-bottom: 50px;
+        }
         &__topTitle{
             margin-bottom: 8px;
             font-family: variables.$title-font;

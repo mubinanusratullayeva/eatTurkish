@@ -1,0 +1,57 @@
+@use'../mixins';
+@use'../variables';
+
+.instagr{
+    padding: 130px 0;
+    background-color: #f4f4f4;
+    &__fotoBox{
+        @include mixins.flexbox(center);
+        column-gap: 64px;
+        &-desc{
+            text-align: left;
+            &--topTitle{
+            margin-bottom: 8px;
+            font-family: variables.$title-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 130%;
+            letter-spacing: 0.04em;
+            text-transform: capitalize;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: variables.$secondary-color;
+            }
+            &--title{
+            margin-top: 8px;
+            font-family: variables.$title-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: variables.$secondary-color;
+            }
+            &--text{
+                margin: 24px 0;
+                max-width: 491px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: 0.04em;
+                color: #AAAAAA;
+            }
+            &--btn{
+                @include mixins.borWBtn(variables.$diff-color, variables.$secondary-color);
+            }
+            &--btn:hover{
+                background-color: variables.$diff-color;
+                color: variables.$main-color;
+            }
+            &--btn:active{
+                background-color: tomato;
+            }
+        }
+    }
+}
