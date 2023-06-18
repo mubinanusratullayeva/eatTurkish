@@ -1,0 +1,12 @@
+@use'../mixins';
+@use'../variables';
+
+.bgVideo{
+    padding: 120px 0;
+    &__ifr{
+        position:relative;
+        &-icon{
+            position: absolute;
+        }
+    }
+}

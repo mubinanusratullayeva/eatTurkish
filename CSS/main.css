@@ -861,4 +861,14 @@ header .hero__desk .borWBtn {
   background-color: tomato;
 }
 
+.bgVideo {
+  padding: 120px 0;
+}
+.bgVideo__ifr {
+  position: relative;
+}
+.bgVideo__ifr-icon {
+  position: absolute;
+}
+
 /*# sourceMappingURL=main.css.map */
