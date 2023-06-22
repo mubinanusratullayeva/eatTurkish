@@ -8,7 +8,7 @@
         .accordion-body{
             @include mixins.flexbox(center!important);
             flex-wrap: wrap!important;
-            column-gap: 35px!important;
+            column-gap: 26px!important;
             row-gap: 35px!important;
             margin-bottom: 50px;
         }

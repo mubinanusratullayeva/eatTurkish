@@ -1,114 +1,12 @@
 @use'../variables';
 @use'../mixins';
 
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-    margin-left: 40px;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #ffffff00;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 175%;
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
-    border: 1px solid #FFFFFF;
-}
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn-white::after {
-    background-color: #ffffff;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-header{
+.heroTop{
     padding-bottom: 237px;
 //     background: #200122;  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
 // background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-color: variables.$diff-color;
-    nav{
-        .navbar{
-            @include mixins.flexbox(center, space-between);
-            &__menu{
-                min-width: 35%;
-                @include mixins.flexbox(center, space-between);
-                &-burger{
-                    @include mixins.flexbox(center, space-between);
-                    column-gap: 40px;
-                    &--list{
-                    list-style: none;
-                    }
-                    &--link{
-                    padding: 39px 0;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 22px;
-                    letter-spacing: 0.04em;
-                    color: variables.$main-color;
-                    text-decoration: none;
-                    }
-                    &--link:hover{
-                        border-bottom: 2px solid rgb(187, 187, 0); 
-                    }
-                }
-                .borWBtn{
-                    margin-left: 40px;
-                    @include mixins.borWBtn(variables.$main-color, variables.$diff-color);
-                }
-            }
-        }
-    }
     .hero{
         margin-top: 80px;
         background-image: url(../images/hero-bg1x.png);

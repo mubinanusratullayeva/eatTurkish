@@ -53,5 +53,10 @@
                 background-color: tomato;
             }
         }
+        &-fotos{
+            @include mixins.flexbox(center);
+            column-gap: 32px;
+            overflow-x: hidden;
+        }
     }
 }

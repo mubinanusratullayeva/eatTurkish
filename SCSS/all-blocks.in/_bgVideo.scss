@@ -3,10 +3,15 @@
 
 .bgVideo{
     padding: 120px 0;
+    position:relative;
+    max-width: 1666px;
+    margin: 0 auto;
     &__ifr{
-        position:relative;
         &-icon{
             position: absolute;
+            top: 208px;
+            z-index: 1;
+            left: 96px;
         }
     }
 }

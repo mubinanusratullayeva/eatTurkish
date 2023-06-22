@@ -1,0 +1,162 @@
+@use'../variables';
+@use'../mixins';
+
+.contact{
+    padding-bottom: 55px;
+    &__pageOther{
+        font-family: variables.$secondary-font;
+        padding-right: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #B0B0B0;
+        border-right: 2px solid #B0B0B0;
+        text-decoration: none;
+    }
+    &__pageOther:hover{
+       color: variables.$diff-color;
+       border-right: 2px solid variables.$diff-color;
+    }
+    &__pageThis{
+        font-family: variables.$secondary-font;
+        padding-left: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: variables.$diff-color;
+        text-decoration: none;
+    }
+    .registure{
+        text-align: center;
+        &__title{
+            font-family: variables.$title-font;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: variables.$secondary-color;
+        }
+        .flexbox{
+            margin-top: 40px;
+            @include mixins.flexbox(center, space-between);
+            column-gap: 50px;
+            &__itemFirst{
+                margin-top: 40px;
+                @include mixins.flexbox(center, center, column);
+                row-gap: 15px;
+                &-card{
+                    padding: 27px 20px;
+                    @include mixins.flexbox(center);
+                    min-width: 420px;
+                    border: 1px solid rgba(36, 36, 36, 0.1);
+                    border-radius: 14px;
+                    column-gap: 25px;
+                    &--icon{
+                        @include mixins.flexbox(center, center);
+                        min-width: 60px;
+                        min-height: 60px;
+                        background-color: rgba(36, 36, 36, 0.05);
+                        border-radius: 50%;
+                    }
+                    &--inlinebox{
+                        text-align: left;
+                        .cardName{
+                            font-weight: 600;
+                            font-size: 22px;
+                            line-height: 34px;
+                            color: variables.$secondary-color;
+                            text-transform: capitalize;   
+                        }
+                        .cardLinks{
+                            margin-top: 3px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: variables.$secondary-color;
+                            opacity: 0.7;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            &__itemSecond{
+                padding: 40px 40px 50px 40px;
+                border: 1px solid rgba(36, 36, 36, 0.1);
+                border-radius: 14px;
+                text-align: left;
+                &-title{
+                    font-weight: 600;
+                    font-size: 38px;
+                    line-height: 34px;
+                    color: variables.$secondary-color;
+                    text-transform: capitalize;
+                }
+                &-text{
+                    margin-top: 16px;
+                    max-width: 565px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: variables.$secondary-color;
+                    opacity: 0.7;
+                }
+                .regForm{
+                    margin-top: 40px;
+                    @include mixins.flexbox(center, space-between);
+                    flex-wrap: wrap;
+                    row-gap: 15px;
+                    &__elinput{
+                        min-width: 345px;
+                        padding: 20px;
+                        border: 1px solid rgba(51, 34, 68, 0.1);
+                        border-radius: 12px;
+                        outline: none;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &__elinput:focus{
+                        -webkit-box-shadow: 1px 1px 9px 5px rgba(84,132,255,0.68); 
+box-shadow: 1px 1px 9px 5px rgba(84,132,255,0.68);
+                    }
+                    &__elinput::placeholder{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #333333;
+                        opacity: 0.6;
+                    }
+                    &__comment{
+                        padding: 20px;
+                        min-width: 100%;
+                        height: 150px;
+                        border: 1px solid rgba(36, 36, 36, 0.1);
+                        border-radius: 14px;
+                        outline: none;
+                        resize: none;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &__comment:focus{
+                        -webkit-box-shadow: 1px 1px 9px 5px rgba(84,132,255,0.68); 
+box-shadow: 1px 1px 9px 5px rgba(84,132,255,0.68);
+                    }
+                    &__comment::placeholder{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #333333;
+                        opacity: 0.6;
+                    }
+                    &__btn{
+                        @include mixins.borWBtn(variables.$diff-color, variables.$main-color);
+                        background-color: variables.$diff-color;
+                    }
+                }
+            }
+        }
+    }
+}

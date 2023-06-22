@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header style="padding-top: 26px;">
+    <header style="padding-top: 26px;" class="heroTop">
         <nav>
             <div class="container">
                 <div class="navbar">
@@ -24,7 +24,8 @@
                             </li>
                             <li class="navbar__menu-burger--list"><a class="navbar__menu-burger--link" href="#">About
                                     Us</a></li>
-                            <li class="navbar__menu-burger--list"><a class="navbar__menu-burger--link" href="#">Contact
+                            <li class="navbar__menu-burger--list"><a class="navbar__menu-burger--link"
+                                    href="./pages/contact.html">Contact
                                     Us</a></li>
                         </ul>
                         <a href="" class="btn btn-white btn-animate">log in</a>
@@ -365,7 +366,7 @@
                         <button style="margin-left: 30px;" class="delete-button">></button>
                     </div>
                 </div>
-                <img style="margin-left: 1213px; margin-bottom: -147px;" src="./icons/biteDelight.svg"
+                <img style="margin-left: 1213px; margin-bottom: -217px;" src="./icons/biteDelight.svg"
                     alt="biteDelight">
             </div>
         </section>
@@ -535,11 +536,11 @@
             </div>
         </section>
         <section class="bgVideo">
+            <img class="bgVideo__ifr-icon" src="./icons/biteDelight.svg" alt="biteDelight">
             <iframe class="bgVideo__ifr" width="100%" height="600px" src="https://www.youtube.com/embed/oEHO9N_5i6I"
                 title="London&#39;s best neighbourhoods to visit | Condé Nast Traveller" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
-                <img class="bgVideo__ifr-icon" src="./icons/biteDelight.svg" alt="biteDelight">
             </iframe>
         </section>
         <section class="instagr">
@@ -557,13 +558,22 @@
                             Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
                         <button class="instagr__fotoBox-desc--btn">view more</button>
                     </div>
-                    <div class="instagr__fotoBox-fotos"></div>
+                    <div class="instagr__fotoBox-fotos">
+                        <img src="./images/michele-blackwell-rAyCBQTH7ws-unsplash1x.png" alt="food img1"
+                            srcset="./images/michele-blackwell-rAyCBQTH7ws-unsplash1x.png 1x, ./images/michele-blackwell-rAyCBQTH7ws-unsplash2x.png 2x">
+                        <img src="./images/insimg1x.png" alt="food img2"
+                            srcset="./images/insimg1x.png 1x, ./images/insimg2x.png 2x">
+                        <img src="./images/michele-blackwell-rAyCBQTH7ws-unsplash1x.png" alt="food img1"
+                            srcset="./images/michele-blackwell-rAyCBQTH7ws-unsplash1x.png 1x, ./images/michele-blackwell-rAyCBQTH7ws-unsplash2x.png 2x">
+                        <img src="./images/insimg1x.png" alt="food img2"
+                            srcset="./images/insimg1x.png 1x, ./images/insimg2x.png 2x">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
