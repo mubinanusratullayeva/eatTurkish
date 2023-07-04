@@ -78,9 +78,6 @@
                         .star:hover{
                             fill: yellow;
                         }
-                        .fillColor{
-                            fill: variables.$little-star;
-                        }
                     }
                     &--price{
                         display: inline-block;
@@ -100,4 +97,14 @@
             margin-left: 1213px;
         }
     }
+}
+
+.darkPop{
+    transition: 0.4s ease-in-out !important;
+    background-color: #490202;
+}
+
+.cardsItem{
+    transition: 0.4s ease-in-out !important;
+    background-color: #650c3fb3 !important;
 }

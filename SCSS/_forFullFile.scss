@@ -16,10 +16,26 @@
 body{
     font-family: variables.$body-font;
     color: variables.$main-color;
+    transition: 0.3s ease-in-out;
 }
 
-nav{
-    background-color: variables.$diff-color;
+.darkTitle{
+    color: variables.$main-color !important;
+}
+
+section{
+    transition: 0.3s ease-in-out;
+}
+
+.darkModeOfSection{
+    background-color: #6f0000;
+}
+
+.btnFontColor{
+    color: #ffffffa6 !important;
+}
+
+.navBoss{
     .navbar{
         @include mixins.flexbox(center, space-between);
         &__menu{
@@ -28,11 +44,12 @@ nav{
             &-burger{
                 @include mixins.flexbox(center, space-between);
                 column-gap: 40px;
+                margin-right: 40px;
                 &--list{
                 list-style: none;
                 }
                 &--link{
-                padding: 39px 0;
+                padding: 38px 0;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
@@ -43,6 +60,31 @@ nav{
                 &--link:hover{
                     border-bottom: 2px solid rgb(255, 255, 0); 
                 }
+            }
+            &-switch{
+                background-color: #ffffff;
+                width: 40px;
+                height: 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                border: 2px solid #ffffff;
+                position: relative;
+            }
+            &-switchBtn{
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: variables.$diff-color;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                transition: 0.2s;
+            }
+            .changePos{
+               left: 20px;
+               background-color: #200122;
+               background-color: -webkit-linear-gradient(to right, #6f0000, #200122);
+               background-color: linear-gradient(to right, #6f0000, #200122);
             }
             .borWBtn{
                 margin-left: 40px;

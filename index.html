@@ -12,10 +12,12 @@
 
 <body>
     <header style="padding-top: 26px;" class="heroTop">
-        <nav>
+        <nav class="navBoss">
             <div class="container">
                 <div class="navbar">
-                    <img style="width: 135px;" src="./icons/eatTurkish.svg" alt="eatTurkish">
+                    <a href="#">
+                        <img style="width: 135px;" src="./icons/eatTurkish.svg" alt="eatTurkish">
+                    </a>
                     <div class="navbar__menu">
                         <ul class="navbar__menu-burger">
                             <li class="navbar__menu-burger--list"><a class="navbar__menu-burger--link" href="#">Menu</a>
@@ -28,6 +30,10 @@
                                     href="./pages/contact.html">Contact
                                     Us</a></li>
                         </ul>
+                        <label class="navbar__menu-switch">
+                            <input style="display: none;" type="checkbox" class="navbar__checkbox">
+                            <span class="navbar__menu-switchBtn"></span>
+                        </label>
                         <a href="" class="btn btn-white btn-animate">log in</a>
                     </div>
                 </div>

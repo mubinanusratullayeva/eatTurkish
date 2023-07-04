@@ -1,11 +1,15 @@
 @use'../variables';
 @use'../mixins';
 
+
+.CheangedHero{
+    transition: 0.4s ease-in-out !important;
+    background: #200122;
+background: -webkit-linear-gradient(to right, #6f0000, #200122);
+background: linear-gradient(to right, #6f0000, #200122);
+}
 .heroTop{
     padding-bottom: 237px;
-//     background: #200122;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-color: variables.$diff-color;
     .hero{
         margin-top: 80px;
